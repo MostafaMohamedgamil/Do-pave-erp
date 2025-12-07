@@ -8,10 +8,11 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Header } from './shared/header/header';
+import { Footer } from './shared/footer/footer';
 
 @NgModule({
   declarations: [App],
-  imports: [BrowserModule, AppRoutingModule, Header],
+  imports: [BrowserModule, AppRoutingModule, Header, Footer],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),

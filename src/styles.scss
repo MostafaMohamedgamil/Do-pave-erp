@@ -28,11 +28,34 @@ ul {
     margin: 0;
     padding: 0;
 }
+.bg-main{
+    background-color: $main-color;
+}
+.fs-40{
+    font-size: clamp(20px, 2.78vw, 40px);
+}
+.fs-20{
+    font-size: clamp(14px, 1.39vw, 20px);
+}
+.fs-24{
+    font-size: clamp(16px, 1.67vw, 24px);
+}
+.fs-32{
+    font-size: clamp(18px, 2.22vw, 32px);
+}
+.mb-32{
+    margin-bottom: 32px;
+}
 .text-shared{
     color: $main-color;
 }
 .bg-shared{
-    background:linear-gradient(180.87deg, #FFFFFF 16.85%, #DDE7FD 132.12%) !important;
+    background: 
+url("/assets/images/vector.png"),
+  linear-gradient(180.87deg, #FFFFFF 16.85%, #DDE7FD 132.12%);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 .shared-btn{
     background-color: $main-color;
