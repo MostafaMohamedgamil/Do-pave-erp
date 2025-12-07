@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'bootstrap/scss/bootstrap' as *;
+// color file
+@use "../src/app/shared/scss/color" as *;
+
+//reixicon
+@import 'remixicon/fonts/remixicon.css';
+// toster
+// @import 'ngx-toastr/toastr-bs5-alert';
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F6F8FB;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-shared{
+    color: $main-color;
+}
+.bg-shared{
+    background:linear-gradient(180.87deg, #FFFFFF 16.85%, #DDE7FD 132.12%) !important;
+}
+.shared-btn{
+    background-color: $main-color;
+    padding-right: 14px;
+    padding-left: 14px;
+
+    height: 40px !important;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        height: 35px !important;
+        padding-top: 4px;
+        background-color: #86a3ff;
+        color: white;
+    }
+}
+// .background-shared{
+// background-image: url('../src/assets/images/Vector\ \(2\).png');
+// }
