@@ -1,0 +1,65 @@
+@use '../../shared/scss/color.scss' as *;
+
+.accounting {
+  padding-top: 120px;
+  min-height: 100vh;
+  .container {
+    min-height: calc(100vh - 120px);
+  }
+  .accounting-description {
+    margin-top: 60px;
+  }
+}
+.accounting-tool {
+  background: url('/images/vector.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  .accounting-tool-card {
+    background: linear-gradient(180deg, #fafbff 0%, rgba(229, 235, 255, 0.39) 100%);
+    width: 190px;
+    height: 190px;
+  }
+}
+// MEDIA QUERIES
+@media (min-width: 1200px) {
+  .accounting {
+    min-height: 100vh;
+    .container {
+      min-height: calc(100vh - 120px);
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .accounting {
+    min-height: 90vh;
+    .container {
+      min-height: calc(90vh - 120px);
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .accounting {
+    min-height: 80vh;
+    .container {
+      min-height: calc(80vh - 120px);
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .accounting {
+    min-height: 70vh;
+    .container {
+      min-height: calc(70vh - 120px);
+    }
+  }
+}
+@media (max-width: 575px) {
+  .accounting {
+    min-height: 60vh;
+    .container {
+      min-height: calc(60vh - 120px);
+    }
+  }
+}

@@ -4,6 +4,7 @@ import {
   provideZonelessChangeDetection,
 } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -17,6 +18,7 @@ import { Footer } from './shared/footer/footer';
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideClientHydration(withEventReplay()),
+    provideAnimations(),
   ],
   bootstrap: [App],
 })

@@ -3,8 +3,11 @@
 .erp-business {
   padding-top: 120px;
   min-height: 100vh;
-  h1 {
-    font-size: clamp(18px, 2.5vw, 36px);
+  //   h1 {
+  //     font-size: clamp(18px, 2.5vw, 36px);
+  //   }
+  .container {
+    min-height: calc(100vh - 120px);
   }
   p {
     font-size: clamp(14px, 1.39vw, 20px);
@@ -179,25 +182,40 @@
 @media (min-width: 1200px) {
   .erp-business {
     min-height: 100vh;
+    .container {
+      min-height: calc(100vh - 120px);
+    }
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .erp-business {
     min-height: 90vh;
+    .container {
+      min-height: calc(90vh - 120px);
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .erp-business {
     min-height: 80vh;
+    .container {
+      min-height: calc(80vh - 120px);
+    }
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .erp-business {
     min-height: 70vh;
+    .container {
+      min-height: calc(70vh - 120px);
+    }
   }
 }
 @media (max-width: 575px) {
   .erp-business {
     min-height: 60vh;
+    .container {
+      min-height: calc(60vh - 120px);
+    }
   }
 }
