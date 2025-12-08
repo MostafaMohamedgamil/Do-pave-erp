@@ -1,9 +1,9 @@
-<section class="erp-business bg-shared">
+<section class="erp-business bg-shared position-relative">
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col-lg-6">
         <div class="content text-center">
-          <h1 class="fw-medium">
+          <h1 class="fw-medium mb-32">
             <span class="text-shared">Your All</span>-in-One ERP to Run & Scale Your
             <span class="text-shared">Business</span>
           </h1>
@@ -18,19 +18,522 @@
       </div>
     </div>
 
-    <div class="d-flex flex-column align-items-center erp-description">
-      <img src="assets/images/full-erp.png" alt="" />
+    <!-- <div class="d-flex flex-column align-items-center erp-description"></div> -->
+  </div>
+  <img src="images/full-erp.png" alt="full-erp" class="position-absolute bottom-0 start-50 translate-middle-x" />
+</section>
+
+<section class="fast-growing-business bg-shared">
+  <div class="pt-60">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-7">
+          <div class="fast-growing_header text-center">
+            <h2 class="fw-bold mb-3 mb-lg-4 fs-40">
+              A Powerful ERP Designed for Fast-<span class="text-shared">Growing Businesses</span>
+            </h2>
+            <p class="fw-medium text-muted fs-20">
+              Our system connects your teams, automates daily tasks, and gives you real-time
+              insights to help you make smarter decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="imges">
+        <img src="images/bank.png" alt="bank" />
+        <img src="images/employees.png" alt="employees" />
+      </div>
     </div>
   </div>
 </section>
-<section class="fast-growing-business bg-shared">
-  <div class="mt-60">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-6">
-          <h1 class="fw-bold">
-            A Powerful ERP Designed for Fast-<span class="text-shared">Growing Businesses</span>
-          </h1>
+
+<section class="full-erp bg-shared">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-7">
+        <div class="full-erp_header text-center">
+          <h2 class="fw-bold fs-40 mb-3 mb-lg-4">
+            FULL ERP <span class="text-shared">Features</span>
+          </h2>
+          <p class="fw-medium text-muted fs-20">
+            Manage finance, HR, operations, inventory, and workflows from one unified ERP system.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="row g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6" *ngFor="let item of cards; let i = index">
+          <div class="feature-card h-100 p-4">
+            <span class="card-number fw-bold fs-32">
+              {{ i + 1 | number : '2.0' }}
+            </span>
+            <div class="card-icon mb-4 m-auto d-flex justify-content-center align-items-center">
+              <img src="/images/icons/icon1.png" alt="" />
+            </div>
+            <h5 class="card-title fw-medium mb-3 text-center">
+              {{ item.title }}
+            </h5>
+            <p class="card-desc text-center">
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="erp-platform">
+  <div class="container">
+    <div class="row justify-content-center align-items-center mb-xl-5 mb-lg-4 mb-md-3 mb-sm-2">
+      <div class="col-lg-8">
+        <div class="full-erp_header text-center">
+          <h2 class="fw-bold fs-40 mb-3 mb-lg-4">
+            Crafted for <span class="text-shared">Efficiency</span> and
+            <span class="text-shared">Results</span>
+          </h2>
+          <p class="fw-medium text-muted fs-20 mb-4">
+            Our ERP platform gives you real-time visibility, automated workflows, and streamlined
+            operations — all in one place
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="real-data rounded-5 px-4 py-5 mb-4">
+          <img src="images/reporting-original.png" alt="Real Time Data" class="w-100" />
+          <div class="mt-5">
+            <h2 class="fs-32 fw-semibold">Real Time Data</h2>
+            <p class="text-muted mt-3 fs-24">
+              Make smarter decisions with up-to-date metrics on sales, purchases, inventory,
+              employee performance, and more — all synced automatically
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="end-to-end rounded-5 px-4 py-5 mb-4">
+          <img src="images/business-automation.png" alt="" class="w-100" />
+          <div class="mt-5">
+            <h2 class="fs-32 fw-semibold">End-to-End Business Automation</h2>
+            <p class="text-muted mt-3 fs-24">
+              Automate your entire business process across departments — from inventory and sales to
+              HR and finance. Reduce manual work, increase accuracy, and scale with confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flexibility-for-localization py-5 ps-4 rounded-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="">
+            <h2 class="fs-32 mb-4 fw-semibold">Flexibility for Localization</h2>
+            <p class="text-muted fs-24 mb-5 mbmd">
+              With built-in flexibility for localization, Full ERP platform helps you tailor your
+              operations to different regions.
+            </p>
+            <p class="text-muted fs-24">
+              Languages, and local needs, ensuring a smooth experience wherever you do business.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <img src="images/flexibility-original.png" alt="flexibility-original" class="w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="integration-capabilities bg-shared">
+  <div class="container">
+    <div class="row justify-content-center align-items-center mb-xl-5 mb-lg-4 mb-md-3 mb-sm-2">
+      <div class="col-lg-7">
+        <div class="full-erp_header text-center">
+          <h2 class="fw-bold fs-40 mb-3 mb-lg-4">
+            <span class="text-shared">Integration</span> Capabilities
+          </h2>
+          <p class="fw-medium text-muted fs-20 mb-4">
+            Connect your ERP with the tools you already use. Streamline operations, <br />
+            reduce manual work, and keep all your systems synchronized in real time.
+          </p>
+          <img src="images/integration-capabilities.png" alt="Integration Capabilities" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-plan">
+  <div class="container">
+    <div class="row justify-content-center align-items-center mb-xl-5 mb-lg-4 mb-md-3 mb-sm-2">
+      <div class="col-lg-7">
+        <div class="full-erp_header text-center">
+          <h2 class="fw-bold fs-40 mb-3 mb-lg-4">
+            <span class="text-shared">Flexible pricing</span> for every team
+          </h2>
+          <p class="fw-medium text-muted fs-20 mb-4">
+            Flexible plans tailored to fit every team’s workflow and growth.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card p-4 h-100">
+          <div class="d-flex gap-3 align-items-center">
+            <img src="images/icon.png" alt="" />
+            <div>
+              <h6 class="m-0 text-muted fs-20">For Individuals</h6>
+              <h4 class="m-0 fw-semibold fs-20">Basic</h4>
+            </div>
+          </div>
+          <p class="desc fw-medium text-muted my-3">
+            Perfect for individuals getting started in streamlined task management.
+          </p>
+
+          <h2 class="fw-bold fs-32 mb-4">$199 <span class="fw-medium fs-20">/monthly</span></h2>
+
+          <p class="fw-bold">What’s included</p>
+          <ul class="list-unstyled">
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              AI Test Cases Generations
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              User Stories and BRD AI
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              Dashboards
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              Default Integrations
+            </li>
+          </ul>
+          <button class="btn w-100 px-4 rounded-3 shared-btn text-white fw-medium" type="submit">
+            Get Started<i class="ri-arrow-right-long-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card p-4 d-flex flex-column featured h-100">
+          <span class="badge popular fw-normal">Popular</span>
+
+          <div class="d-flex gap-3 align-items-center">
+            <img src="images/pricing_icon.png" alt="" />
+            <div>
+              <h6 class="m-0 fw-medium text-white fs-20">For government</h6>
+              <h4 class="m-0 fw-semibold fs-20">Pro</h4>
+            </div>
+          </div>
+          <p class="my-3">
+            Built for public sector teams requiring robust, policy-driven workflows.
+          </p>
+
+          <h2 class="fw-bold fs-32 mb-4">$199 <span class="fw-medium fs-20">/monthly</span></h2>
+
+          <p class="fw-bold">What’s included</p>
+          <ul class="list-unstyled">
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-white d-flex justify-content-center align-items-center">
+                <i class="ri-check-line"></i>
+              </div>
+              Release Notes
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-white d-flex justify-content-center align-items-center">
+                <i class="ri-check-line"></i>
+              </div>
+              Planning Notes
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-white d-flex justify-content-center align-items-center">
+                <i class="ri-check-line"></i>
+              </div>
+              KPIs
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-white d-flex justify-content-center align-items-center">
+                <i class="ri-check-line"></i>
+              </div>
+              Coming Features
+            </li>
+          </ul>
+          <button
+            class="btn w-100 px-4 bg-white text-primary rounded-3 shared-btn fw-medium"
+            type="submit"
+          >
+            Get Started<i class="ri-arrow-right-long-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card p-4 h-100">
+          <div class="d-flex gap-3 align-items-center">
+            <img src="images/icon.png" alt="" />
+            <div>
+              <h6 class="m-0 text-muted fs-20">For big companies</h6>
+              <h4 class="m-0 fw-semibold fs-20">Enterprise</h4>
+            </div>
+          </div>
+          <p class="desc fw-medium text-muted my-3">
+            Enterprise subscription include all the pro specifications plus.
+          </p>
+
+          <h2 class="fw-bold fs-32 mb-4">$199 <span class="fw-medium fs-20">/monthly</span></h2>
+
+          <p class="fw-bold">What’s included</p>
+          <ul class="list-unstyled">
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              Custom aI model and templates
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              White labeling
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              fill integrations with other tools include customization and development if needed
+            </li>
+            <li class="d-flex gap-2 mb-3">
+              <div class="icon-container bg-main d-flex justify-content-center align-items-center">
+                <i class="ri-check-line text-white"></i>
+              </div>
+              on-premise setup
+            </li>
+          </ul>
+          <button class="btn w-100 px-4 rounded-3 shared-btn text-white fw-medium" type="submit">
+            Get Started<i class="ri-arrow-right-long-fill"></i>
+          </button>
+          <!-- <button class="btn btn-primary w-100 mt-auto">Get Started</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testemonials">
+  <div class="container">
+    <div class="row justify-content-center align-items-center mb-xl-5 mb-lg-4 mb-md-3 mb-sm-2">
+      <div class="col-lg-7">
+        <div class="full-erp_header text-center">
+          <h2 class="fw-bold fs-40 mb-3 mb-lg-4">
+            <span class="text-shared">What</span> our Users say
+            <span class="text-shared">About FULL ERP</span>
+          </h2>
+          <p class="fw-medium text-muted fs-20 mb-4">
+            Real feedback from real teams improving their productivity with FULL ERP.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-3">
+        <div class="card border-0 pt-3 pb-3">
+          <div class="card-header border-0 bg-white d-flex align-items-center gap-2">
+            <img src="images/person.png" alt="person" />
+            <div class="testemonials_info">
+              <h6 class="testemonials_name fw-medium mb-3">Ahmed Mohamed</h6>
+              <p class="fw-medium text-muted m-0">Team lead at creatix studio</p>
+            </div>
+          </div>
+          <div class="custom-divider"></div>
+          <div class="card-body">
+            <p class="card-text text-muted">
+              FULL ERP helped our team stay aligned across projects. the integrations are seamless
+              and the ui is very intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <div class="card border-0 pt-3 pb-3">
+          <div class="card-header border-0 bg-white d-flex align-items-center gap-2">
+            <img src="images/person.png" alt="person" />
+            <div class="testemonials_info">
+              <h6 class="testemonials_name fw-medium mb-3">Ahmed Mohamed</h6>
+              <p class="fw-medium text-muted m-0">Team lead at creatix studio</p>
+            </div>
+          </div>
+          <div class="custom-divider"></div>
+          <div class="card-body pb-50">
+            <p class="card-text text-muted">
+              FULL ERP helped our team stay aligned across projects. the integrations are seamless
+              and the ui is very intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <div class="card border-0 pt-3 pb-3">
+          <div class="card-header border-0 bg-white d-flex align-items-center gap-2">
+            <img src="images/person.png" alt="person" />
+            <div class="testemonials_info">
+              <h6 class="testemonials_name fw-medium mb-3">Ahmed Mohamed</h6>
+              <p class="fw-medium text-muted m-0">Team lead at creatix studio</p>
+            </div>
+          </div>
+          <div class="custom-divider"></div>
+          <div class="card-body">
+            <p class="card-text text-muted">
+              FULL ERP helped our team stay aligned across projects. the integrations are seamless
+              and the ui is very intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <div class="card border-0 pt-3 pb-3">
+          <div class="card-header border-0 bg-white d-flex align-items-center gap-2">
+            <img src="images/person.png" alt="person" />
+            <div class="testemonials_info">
+              <h6 class="testemonials_name fw-medium mb-3">Ahmed Mohamed</h6>
+              <p class="fw-medium text-muted m-0">Team lead at creatix studio</p>
+            </div>
+          </div>
+          <div class="custom-divider"></div>
+          <div class="card-body">
+            <p class="card-text text-muted">
+              FULL ERP helped our team stay aligned across projects. the integrations are seamless
+              and the ui is very intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <div class="card border-0 pt-3 pb-3">
+          <div class="card-header border-0 bg-white d-flex align-items-center gap-2">
+            <img src="images/person.png" alt="person" />
+            <div class="testemonials_info">
+              <h6 class="testemonials_name fw-medium mb-3">Ahmed Mohamed</h6>
+              <p class="fw-medium text-muted m-0">Team lead at creatix studio</p>
+            </div>
+          </div>
+          <div class="custom-divider"></div>
+          <div class="card-body pb-50">
+            <p class="card-text text-muted">
+              FULL ERP helped our team stay aligned across projects. the integrations are seamless
+              and the ui is very intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <div class="card border-0 pt-3 pb-3">
+          <div class="card-header border-0 bg-white d-flex align-items-center gap-2">
+            <img src="images/person.png" alt="person" />
+            <div class="testemonials_info">
+              <h6 class="testemonials_name fw-medium mb-3">Ahmed Mohamed</h6>
+              <p class="fw-medium text-muted m-0">Team lead at creatix studio</p>
+            </div>
+          </div>
+          <div class="custom-divider"></div>
+          <div class="card-body">
+            <p class="card-text text-muted">
+              FULL ERP helped our team stay aligned across projects. the integrations are seamless
+              and the ui is very intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <div class="row justify-content-center align-items-center mb-xl-5 mb-lg-4 mb-md-3 mb-sm-2">
+      <div class="col-lg-7">
+        <div class="full-erp_header text-center">
+          <div>
+            <p class="badge text-shared p-2 fw-medium mb-4">FAQ</p>
+          </div>
+          <h2 class="fw-bold fs-40 mb-3 mb-lg-4">
+            <span class="text-shared">Frequently</span> Asked Questions
+          </h2>
+          <p class="fw-medium text-muted fs-20 mb-4">
+            Find quick answers to common questions about qure and how it <br />
+            works
+          </p>
+        </div>
+        <div class="faq-accordion">
+          <accordion [closeOthers]="true" [isAnimated]="true">
+            <!-- *ngFor="let faq of faqItems; let i = index"   -->
+            @for (faq of faqItems; track $index; let i = $index) {
+            <accordion-group class="mb-3" (isOpenChange)="toggleAccordion(i, $event)"
+>
+              <a
+                role="button"
+                class="btn btn-link ps-0 btn-block justify-content-between d-flex w-100 shadow-none"
+                accordion-heading
+                type="button"
+              >
+                <span class="text-shared fs-20 fw-medium">
+                  {{ faq.question }}
+                </span>
+                <i
+                  class="text-shared"
+                  [ngClass]="
+                    toggleState[i] ? 'ri-arrow-up-s-line' : 'ri-arrow-down-s-line'
+                  "
+                ></i>
+              </a>
+              <div class="text-muted fs-18 fw-medium">
+                {{ faq.answer }}
+              </div>
+            </accordion-group>
+            }
+          </accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="streamline bg-shared">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div>
+          <h2 class="fw-bold fs-40 mb-3 mb-lg-4">
+            start today!
+            <span class="text-shared">Streamline </span>your business operations-
+            <span class="text-shared">start today!</span>
+          </h2>
+          <p class="fw-medium text-muted fs-20 mb-4">
+            Take the next step with Full ERP, the modular, scalable, and user-friendly Open Source
+            ERP platforms designed to streamline your operations. Experience seamless collaboration
+            to boost efficiency and growth.
+          </p>
+          <button class="btn px-4 rounded-3 shared-btn text-white fw-medium mt-4" type="submit">
+            GET A DEMO <i class="ri-arrow-right-long-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="streamline-img">
+          <img src="images/employees.png" alt="streamline-img" class="w-100" />
         </div>
       </div>
     </div>

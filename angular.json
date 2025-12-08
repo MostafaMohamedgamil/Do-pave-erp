@@ -31,14 +31,10 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-                "src/assets",
-              {
-                "glob": "**/*",
-                "input": "src/app/assets"
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "server": "src/main.server.ts",
@@ -103,6 +99,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ]
           }

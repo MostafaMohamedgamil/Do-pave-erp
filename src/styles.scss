@@ -1,54 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'bootstrap/scss/bootstrap' as *;
 // color file
-@use "../src/app/shared/scss/color" as *;
+@use '../src/app/shared/scss/color' as *;
 
 //reixicon
 @import 'remixicon/fonts/remixicon.css';
 // toster
 // @import 'ngx-toastr/toastr-bs5-alert';
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #F6F8FB;
-    text-transform: capitalize;
+  background-color: #f6f8fb;
+  text-transform: capitalize;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.text-shared{
-    color: $main-color;
+.bg-main {
+  background-color: $main-color;
 }
-.bg-shared{
-    background:linear-gradient(180.87deg, #FFFFFF 16.85%, #DDE7FD 132.12%) !important;
+.fs-40 {
+  font-size: clamp(20px, 2.78vw, 40px);
 }
-.shared-btn{
-    background-color: $main-color;
-    padding-right: 14px;
-    padding-left: 14px;
+.fs-20 {
+  font-size: clamp(14px, 1.39vw, 20px);
+}
+.fs-24 {
+  font-size: clamp(16px, 1.67vw, 24px);
+}
+.fs-32 {
+  font-size: clamp(18px, 2.22vw, 32px);
+}
+.fs-18 {
+  font-size: clamp(12px, 1.25vw, 18px);
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.text-shared {
+  color: $main-color;
+}
+.bg-shared {
+  background: url('../public/images/vector.png'),
+    linear-gradient(180.87deg, #ffffff 16.85%, #dde7fd 132.12%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.shared-btn {
+  background-color: $main-color;
+  padding-right: 14px;
+  padding-left: 14px;
 
-    height: 40px !important;
+  height: 40px !important;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    height: 35px !important;
+    padding-top: 4px;
+    background-color: #86a3ff;
     color: white;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        height: 35px !important;
-        padding-top: 4px;
-        background-color: #86a3ff;
-        color: white;
-    }
+  }
 }
-// .background-shared{
-// background-image: url('../src/assets/images/Vector\ \(2\).png');
-// }
+.faq-accordion {
+  .panel-group {
+    .panel {
+      background-color: transparent;
+      .panel-heading {
+        background-color: transparent;
+        border: 0;
+        .accordion-toggle {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      //   .panel-body{
+      //     padding: 0 16px;
+      //   }
+    }
+  }
+}
