@@ -11,7 +11,7 @@ import { Accountant } from './accountant';
   ],
   imports: [
     CommonModule,
-    AccountantRoutingModule
-  ]
+    AccountantRoutingModule,
+]
 })
 export class AccountantModule { }
