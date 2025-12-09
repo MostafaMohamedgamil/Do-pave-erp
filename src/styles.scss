@@ -45,7 +45,7 @@ ul {
   font-size: clamp(18px, 2.22vw, 32px);
 }
 .fs-18 {
-  font-size: clamp(12px, 1.25vw, 18px);
+  font-size: clamp(14px, 1.25vw, 18px);
 }
 .fs-16 {
   font-size: clamp(12px, 1.11vw, 16px);
@@ -100,3 +100,39 @@ ul {
     }
   }
 }
+
+.hover-images {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease-in-out;
+      &:first-child {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 55%;
+        z-index: 1;
+      }
+      &:last-child {
+        position: relative;
+        margin-left: auto;
+        display: block;
+        width: 75%;
+        z-index: 2;
+        right: 0;
+      }
+    }
+    &:hover img:first-child {
+      left: -25px;
+    }
+    &:hover img:last-child {
+      right: -104px;
+    }
+  }

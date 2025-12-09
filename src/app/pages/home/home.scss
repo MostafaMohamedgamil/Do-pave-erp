@@ -21,41 +21,41 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .imges {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: 40px;
-    img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 12px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-      transition: all 0.4s ease-in-out;
-      &:first-child {
-        position: absolute;
-        top: 40px;
-        left: 0;
-        width: 55%;
-        z-index: 1;
-      }
-      &:last-child {
-        position: relative;
-        margin-left: auto;
-        display: block;
-        width: 75%;
-        z-index: 2;
-        right: 0;
-      }
-    }
-    &:hover img:first-child {
-      left: -25px;
-    }
-    &:hover img:last-child {
-      right: -104px;
-    }
-  }
+  // .imges {
+  //   position: relative;
+  //   width: 100%;
+  //   max-width: 900px;
+  //   margin: 0 auto;
+  //   margin-top: 40px;
+  //   img {
+  //     width: 100%;
+  //     max-width: 600px;
+  //     border-radius: 12px;
+  //     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  //     transition: all 0.4s ease-in-out;
+  //     &:first-child {
+  //       position: absolute;
+  //       top: 40px;
+  //       left: 0;
+  //       width: 55%;
+  //       z-index: 1;
+  //     }
+  //     &:last-child {
+  //       position: relative;
+  //       margin-left: auto;
+  //       display: block;
+  //       width: 75%;
+  //       z-index: 2;
+  //       right: 0;
+  //     }
+  //   }
+  //   &:hover img:first-child {
+  //     left: -25px;
+  //   }
+  //   &:hover img:last-child {
+  //     right: -104px;
+  //   }
+  // }
 }
 .full-erp {
   padding: 60px 0;

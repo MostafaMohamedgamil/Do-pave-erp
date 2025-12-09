@@ -2,11 +2,19 @@
   padding-top: 120px;
   .erp-card {
     width: 320px;
-    background-color: #FAFBFF;
+    background-color: #fafbff;
     border-radius: 20px;
-    border: 1px solid #DCE1FF;
-    p {
-      font-size: 10px;
+    border: 1px solid #dce1ff;
+  }
+}
+
+@media (max-width: 575px) {
+  .erp {
+    .erp-card {
+      width: 100%;
+      img {
+        width: 40px;
+      }
     }
   }
 }

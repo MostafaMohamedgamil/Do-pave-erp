@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-erp',
+  selector: 'app-full-erp',
   standalone: false,
-  templateUrl: './erp.html',
-  styleUrl: './erp.scss',
+  templateUrl: './full-erp.html',
+  styleUrl: './full-erp.scss',
 })
-export class Erp {
+export class FullErp {
   erp = [
     {
       imgSrc: 'images/icons/icon23.png',

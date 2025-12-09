@@ -1,0 +1,32 @@
+.full-erp {
+  padding-top: 120px;
+}
+.erp-platform {
+  padding-top: 60px;
+  .real-data {
+    background: linear-gradient(204.64deg, #edf2fe 9.21%, #f7f7f7 100%);
+  }
+  .end-to-end {
+    background: linear-gradient(359.54deg, #ffffff -25.55%, rgba(209, 234, 255, 0.8) 107.94%);
+  }
+}
+.erp {
+  padding-top: 120px;
+  .erp-card {
+    // width: 320px;
+    background-color: #fafbff;
+    border-radius: 20px;
+    border: 1px solid #dce1ff;
+  }
+}
+
+@media (max-width: 575px) {
+  .erp {
+    .erp-card {
+      width: 100%;
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
