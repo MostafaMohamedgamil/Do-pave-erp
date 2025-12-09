@@ -1,0 +1,22 @@
+.login {
+  padding: 120px 0;
+  input {
+    border: #adadad 1px solid;
+    border-radius: 10px;
+  }
+  .or {
+    hr {
+      width: 175px;
+      height: 3px;
+      //     // background-color: red;
+      //   &:first-of-type {
+      //   }
+    }
+  }
+  .google-btn {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
