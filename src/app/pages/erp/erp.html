@@ -1,0 +1,33 @@
+<section class="erp bg-shared position-relative pb-5">
+  <div class="container">
+    <div class="row mb-3 justify-content-center align-items-center">
+      <div class="col-lg-8">
+        <div class="content text-center">
+          <h1 class="fw-medium mb-32 fs-36">ERP <span class="text-shared">Applications </span></h1>
+          <p class="text-muted fs-20 fw-medium mt-4">
+            A complete suite of powerful ERP modules designed to help your business <br />
+            manage operations, automate workflows, and improve efficiency across all <br />
+            departments.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <!-- <div class="col-lg-4"> -->
+        @for (item of erp; track $index) {
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div
+            class="erp-card mb-4 gap-3 py-4 px-4 d-flex  align-items-center"
+          >
+            <img [src]="item.imgSrc" alt="" />
+            <div>
+              <h3 class="fs-16 fw-medium text-shared">{{item.title}}</h3>
+              <p class="fw-medium text-muted m-0">{{item.description}}</p>
+            </div>
+          </div>
+        </div>
+    }
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
